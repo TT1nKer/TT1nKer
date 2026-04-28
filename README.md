@@ -18,9 +18,8 @@ $ systemctl status tt1nker.service --no-pager
 
 [  ok  ] reached target multi-user.target.
 [ wait ] /opt/sleep . . . . . . . . . . . . . . . . . . unreachable
-```
 
-```text
+
 //  stack ───────────────────────────────────────────────────────────
 
     ai          ███████░░░    agent workflows · mcp · claude api
@@ -28,9 +27,8 @@ $ systemctl status tt1nker.service --no-pager
     linux       ████████░░    arch · dotfiles · shell · daily-driven
     low-level   █████████░    c · c++ · assembly · compilers · stm32
     sim         █████░░░░░    life simulation · narrative agents
-```
 
-```text
+
 //  fragments  /  in progress ───────────────────────────────────────
 
     fstCC                      ·  c compiler in raw assembly
@@ -39,13 +37,13 @@ $ systemctl status tt1nker.service --no-pager
     AIC                        ·  ai character builder
     DoomDay                    ·  life-sim · "that day comes"
 
-//  fragments  /  shipped ─────────────────────────────────────────────
+
+//  fragments  /  shipped ───────────────────────────────────────────
 
     pomodoroAKAtimer           ·  single-file minimalist pomodoro
     dotfiles                   ·  arch + shell setup
-```
 
-```text
+
 //  transmission ────────────────────────────────────────────────────
 
     $ echo "$EMAIL"

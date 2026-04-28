@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 618 496" width="100%" preserveAspectRatio="xMidYMid meet">
+<defs><style><![CDATA[
+.bg { fill: #0a0a0a; }
+.txt { font-family: ui-monospace, "JetBrains Mono", Menlo, Consolas, monospace; font-size: 15px; fill: #ededed; white-space: pre; }
+.dim { fill: #6b6b70; }
+.prompt { fill: #6b6b70; }
+@keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+.cursor { animation: blink 1.05s steps(2) infinite; }
+@keyframes typ0 {
+  0% { width: 0; }
+  0.000% { width: 0; }
+  1.848% { width: 71.2px; }
+  71.132% { width: 71.2px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c0 { animation: typ0 17.32s steps(8) infinite; }
+@keyframes typ1 {
+  0% { width: 0; }
+  1.848% { width: 0; }
+  2.887% { width: 62.8px; }
+  71.132% { width: 62.8px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c1 { animation: typ1 17.32s steps(7) infinite; }
+@keyframes typ3 {
+  0% { width: 0; }
+  6.062% { width: 0; }
+  10.912% { width: 180.4px; }
+  71.132% { width: 180.4px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c3 { animation: typ3 17.32s steps(21) infinite; }
+@keyframes typ4 {
+  0% { width: 0; }
+  10.912% { width: 0; }
+  11.952% { width: 121.6px; }
+  71.132% { width: 121.6px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c4 { animation: typ4 17.32s steps(14) infinite; }
+@keyframes typ5 {
+  0% { width: 0; }
+  11.952% { width: 0; }
+  12.991% { width: 71.2px; }
+  71.132% { width: 71.2px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c5 { animation: typ5 17.32s steps(8) infinite; }
+@keyframes typ6 {
+  0% { width: 0; }
+  12.991% { width: 0; }
+  17.633% { width: 566.8px; }
+  71.132% { width: 566.8px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c6 { animation: typ6 17.32s steps(67) infinite; }
+@keyframes typ7 {
+  0% { width: 0; }
+  17.633% { width: 0; }
+  19.642% { width: 247.6px; }
+  71.132% { width: 247.6px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c7 { animation: typ7 17.32s steps(29) infinite; }
+@keyframes typ8 {
+  0% { width: 0; }
+  19.642% { width: 0; }
+  21.928% { width: 281.2px; }
+  71.132% { width: 281.2px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c8 { animation: typ8 17.32s steps(33) infinite; }
+@keyframes typ10 {
+  0% { width: 0; }
+  26.259% { width: 0; }
+  41.039% { width: 541.6px; }
+  71.132% { width: 541.6px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c10 { animation: typ10 17.32s steps(64) infinite; }
+@keyframes typ11 {
+  0% { width: 0; }
+  41.039% { width: 0; }
+  44.296% { width: 398.8px; }
+  71.132% { width: 398.8px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c11 { animation: typ11 17.32s steps(47) infinite; }
+@keyframes typ12 {
+  0% { width: 0; }
+  44.296% { width: 0; }
+  46.928% { width: 323.2px; }
+  71.132% { width: 323.2px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c12 { animation: typ12 17.32s steps(38) infinite; }
+@keyframes typ13 {
+  0% { width: 0; }
+  46.928% { width: 0; }
+  49.423% { width: 306.4px; }
+  71.132% { width: 306.4px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c13 { animation: typ13 17.32s steps(36) infinite; }
+@keyframes typ14 {
+  0% { width: 0; }
+  49.423% { width: 0; }
+  52.610% { width: 390.4px; }
+  71.132% { width: 390.4px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c14 { animation: typ14 17.32s steps(46) infinite; }
+@keyframes typ15 {
+  0% { width: 0; }
+  52.610% { width: 0; }
+  56.767% { width: 508.0px; }
+  71.132% { width: 508.0px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c15 { animation: typ15 17.32s steps(60) infinite; }
+@keyframes typ17 {
+  0% { width: 0; }
+  61.097% { width: 0; }
+  66.640% { width: 205.6px; }
+  71.132% { width: 205.6px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c17 { animation: typ17 17.32s steps(24) infinite; }
+@keyframes typ18 {
+  0% { width: 0; }
+  66.640% { width: 0; }
+  67.956% { width: 163.6px; }
+  71.132% { width: 163.6px; }
+  71.632% { width: 0; }
+  100% { width: 0; }
+}
+.c18 { animation: typ18 17.32s steps(19) infinite; }
+]]></style>
+<clipPath id="cp0"><rect class="c0" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp1"><rect class="c1" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp3"><rect class="c3" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp4"><rect class="c4" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp5"><rect class="c5" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp6"><rect class="c6" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp7"><rect class="c7" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp8"><rect class="c8" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp10"><rect class="c10" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp11"><rect class="c11" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp12"><rect class="c12" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp13"><rect class="c13" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp14"><rect class="c14" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp15"><rect class="c15" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp17"><rect class="c17" x="0" y="0" width="0" height="28"/></clipPath>
+<clipPath id="cp18"><rect class="c18" x="0" y="0" width="0" height="28"/></clipPath>
+</defs>
+<rect class="bg" width="618" height="496"/>
+<rect x="0.5" y="0.5" width="617" height="495" fill="none" stroke="rgba(255,255,255,0.06)"/>
+<g transform="translate(24, 0)" clip-path="url(#cp0)">
+  <text class="txt prompt" x="0" y="42">$ </text>
+  <text class="txt" x="16.8" y="42">whoami</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp1)">
+  <text class="txt" x="0" y="64">tt1nker</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp3)">
+  <text class="txt prompt" x="0" y="108">$ </text>
+  <text class="txt" x="16.8" y="108">cat /etc/os-release</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp4)">
+  <text class="txt" x="0" y="130">NAME="tt1nker"</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp5)">
+  <text class="txt" x="0" y="152">ID=human</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp6)">
+  <text class="txt" x="0" y="174">VARIANT="linux first · low-level by training · agents by curiosity"</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp7)">
+  <text class="txt" x="0" y="196">HOME_URL="github.com/TT1nKer"</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp8)">
+  <text class="txt" x="0" y="218">SUPPORT_URL="hostsjimi@gmail.com"</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp10)">
+  <text class="txt prompt" x="0" y="262">$ </text>
+  <text class="txt" x="16.8" y="262">pacman -Qe                              # explicitly installed</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp11)">
+  <text class="txt" x="0" y="284">ai           agent-workflows · mcp · claude-api</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp12)">
+  <text class="txt" x="0" y="306">fullstack    vue · python · javascript</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp13)">
+  <text class="txt" x="0" y="328">linux        arch · dotfiles · shell</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp14)">
+  <text class="txt" x="0" y="350">lowlevel     c · c++ · asm · compilers · stm32</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp15)">
+  <text class="txt" x="0" y="372">sim          orbital-mechanics · narrative-agents · life-sim</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp17)">
+  <text class="txt prompt" x="0" y="416">$ </text>
+  <text class="txt" x="16.8" y="416">cat ~/.ssh/contact.pub</text>
+</g>
+<g transform="translate(24, 0)" clip-path="url(#cp18)">
+  <text class="txt" x="0" y="438">hostsjimi@gmail.com</text>
+</g>
+<text class="txt prompt" x="24" y="472">$ </text>
+<rect class="cursor" x="40.8" y="459" width="9" height="16" fill="#ededed"/>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet" width="100%">
+  <rect width="1200" height="300" fill="#0a0a0a"/>
+
+  <g stroke="#1a1a1d" stroke-width="0.5">
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="220" x2="1200" y2="220"/>
+  </g>
+
+  <g stroke="#6b6b70" stroke-width="1" fill="none">
+    <path d="M 30 30 L 30 64 M 30 30 L 64 30"/>
+    <path d="M 1170 30 L 1170 64 M 1170 30 L 1136 30"/>
+    <path d="M 30 270 L 30 236 M 30 270 L 64 270"/>
+    <path d="M 1170 270 L 1170 236 M 1170 270 L 1136 270"/>
+  </g>
+
+  <g font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#6b6b70" letter-spacing="3">
+    <text x="42" y="50">[ ID ] 0X_TT1NKER</text>
+    <text x="1158" y="50" text-anchor="end">[ STATUS ] ONLINE</text>
+    <text x="42" y="262">[ ARCH ] LINUX X86_64</text>
+    <text x="1158" y="262" text-anchor="end">[ BUILD ] 2026.04</text>
+  </g>
+
+  <circle cx="1162" cy="46" r="3" fill="#ededed">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1.6s" repeatCount="indefinite" keyTimes="0;0.5;0.5;1"/>
+  </circle>
+
+  <g font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="140" font-weight="200" letter-spacing="6">
+    <text x="600" y="190" text-anchor="middle" fill="#ededed" opacity="0.10" transform="translate(5 0)">TT1NKER</text>
+    <text x="600" y="190" text-anchor="middle" fill="#ededed" opacity="0.10" transform="translate(-5 0)">TT1NKER</text>
+    <text x="600" y="190" text-anchor="middle" fill="#ededed">TT1NKER</text>
+  </g>
+
+  <text x="600" y="232" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="16" fill="#6b6b70" letter-spacing="12">// SYSTEMS · AGENTS · SIM</text>
+
+  <rect x="0" y="-5" width="1200" height="2" fill="#ededed" opacity="0.06">
+    <animate attributeName="y" values="-5;305;305" dur="5s" repeatCount="indefinite" keyTimes="0;0.85;1"/>
+  </rect>
+
+  <g stroke="#6b6b70" stroke-width="0.5">
+    <line x1="80" y1="46" x2="120" y2="46"/>
+    <line x1="1080" y1="46" x2="1120" y2="46"/>
+    <line x1="80" y1="254" x2="120" y2="254"/>
+    <line x1="1080" y1="254" x2="1120" y2="254"/>
+  </g>
+</svg>

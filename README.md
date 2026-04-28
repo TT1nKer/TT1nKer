@@ -1,34 +1,55 @@
-```text
-$ whoami
-tt1nker
-```
-
-> linux first. low-level by training, full-stack by trade, agents by curiosity.
-> compilers, agents, embedded firmware, simulations of futures that haven't arrived.
-
-### // focus
+<p align="center">
+  <img src="header.svg" alt="TT1NKER" width="100%">
+</p>
 
 ```text
-ai          agent workflows · mcp servers · claude api
-full-stack  vue · python · javascript · single-file apps
-linux       arch · dotfiles · shell · daily-driven
-low-level   c · c++ · assembly · compilers · stm32 firmware
-sim         life simulation · narrative agents
+$ systemctl status tt1nker.service --no-pager
+
+● tt1nker.service · operating
+     Loaded:   /etc/identity (linux first, low-level by training)
+     Active:   online since 2025-06 · uptime: too much
+     Drop-In:  /lib/systemd/curiosity.d/agents.conf
+     Memory:   compilers, ghosts, and the things you can't grep for
+     CGroup:   /system.slice/agents.slice
+               ├─ aigit         driving git from a custom agent loop
+               ├─ AIC           spawning ai characters
+               ├─ DoomDay       simulating futures that haven't arrived
+               └─ fstCC         transpiling c, by hand, from assembly
+
+[  ok  ] reached target multi-user.target.
+[ wait ] /opt/sleep . . . . . . . . . . . . . . . . . . unreachable
 ```
 
-### // in progress
+```text
+//  stack ───────────────────────────────────────────────────────────
 
-- [`fstCC`](https://github.com/TT1nKer/fstCC) — c compiler, written in assembly by hand
-- [`bootloader-stm32f1xx-`](https://github.com/TT1nKer/bootloader-stm32f1xx-) — bare-metal bootloader on stm32f1
-- [`aigit`](https://github.com/TT1nKer/aigit) — git extension driven by an agent workflow
-- [`AIC`](https://github.com/TT1nKer/AIC) — ai character builder for narrative agents
-- [`DoomDay`](https://github.com/TT1nKer/DoomDay) — life-sim · what will you do when that day comes
+    ai          ███████░░░    agent workflows · mcp · claude api
+    full-stack  █████░░░░░    vue · python · javascript · single-file
+    linux       ████████░░    arch · dotfiles · shell · daily-driven
+    low-level   █████████░    c · c++ · assembly · compilers · stm32
+    sim         █████░░░░░    life simulation · narrative agents
+```
 
-### // shipped
+```text
+//  fragments  /  in progress ───────────────────────────────────────
 
-- [`pomodoroAKAtimer`](https://github.com/TT1nKer/pomodoroAKAtimer) — single-file minimalist pomodoro
-- [`dotfiles`](https://github.com/TT1nKer/dotfiles) — arch + shell setup
+    fstCC                      ·  c compiler in raw assembly
+    bootloader-stm32f1xx-      ·  bare-metal stm32 bootloader
+    aigit                      ·  agent-driven git extension
+    AIC                        ·  ai character builder
+    DoomDay                    ·  life-sim · "that day comes"
 
-### // reach
+//  fragments  /  shipped ─────────────────────────────────────────────
 
-`hostsjimi@gmail.com`
+    pomodoroAKAtimer           ·  single-file minimalist pomodoro
+    dotfiles                   ·  arch + shell setup
+```
+
+```text
+//  transmission ────────────────────────────────────────────────────
+
+    $ echo "$EMAIL"
+    hostsjimi@gmail.com
+
+    $ _
+```

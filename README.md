@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="header.svg" alt="TT1NKER" width="100%">
+  <img src="banner.svg" alt="TT1NKER" width="100%">
 </p>
 
 ```text

@@ -24,6 +24,7 @@ $ pacman -Qe                              # explicitly installed
 ai/agent-workflows                        latest
 ai/mcp                                    latest
 ai/claude-api                             latest
+ai/persistent-memory                      experimental
 fullstack/vue                             stable
 fullstack/python                          stable
 fullstack/javascript                      stable
@@ -36,31 +37,115 @@ lowlevel/asm                              x86_64
 lowlevel/compilers                        0.0.1
 lowlevel/stm32-firmware                   bare-metal
 sim/life-simulation                       speculative
+sim/orbital-mechanics                     numerical
 sim/narrative-agents                      experimental
 
 
-$ ls -lah ~/projects
-drwxr-xr-x  fstCC                     ·  c compiler in raw assembly
-drwxr-xr-x  bootloader-stm32f1xx-     ·  bare-metal stm32 bootloader
-drwxr-xr-x  aigit                     ·  agent-driven git extension
-drwxr-xr-x  AIC                       ·  ai character builder
-drwxr-xr-x  DoomDay                   ·  life-sim · "that day comes"
--rwxr-xr-x  pomodoroAKAtimer          ·  single-file minimalist pomodoro       [shipped]
--rwxr-xr-x  dotfiles                  ·  arch + shell setup                    [shipped]
+$ ls -lah ~/Projects
+drwxr-xr-x  AICharacter      ·  ai character builder · story distiller
+drwxr-xr-x  Doomsday         ·  《宇宙冷漠》life-sim · npcs · tension engine · ten-tick
+drwxr-xr-x  mempalace        ·  ai memory system · method-of-loci + zettelkasten · 100% recall
+drwxr-xr-x  solar            ·  c++17 solar system simulator · halo orbits · hohmann transfer
+drwxr-xr-x  placecell        ·  place-cell transformer · spatial cognition
+drwxr-xr-x  voice-type       ·  voice → text via sensevoice
+drwxr-xr-x  aiLab            ·  experiments
 
 
-$ systemctl status tt1nker.service --no-pager
-● tt1nker.service · operating
-     Active:   online since 2025-06 · uptime: too much
-     Memory:   compilers, ghosts, and the things you can't grep for
-     CGroup:   /system.slice/agents.slice
-               ├─ aigit         driving git from a custom agent loop
-               ├─ AIC           spawning ai characters
-               ├─ DoomDay       simulating futures that haven't arrived
-               └─ fstCC         transpiling c, by hand, from assembly
+$ ls -lah ~/Downloads | grep -v '^d' | head
+electronics-10-02779.pdf            ·  rf / power electronics paper
+energies-07-04316.pdf               ·  energy systems journal
+'Mathcing Network.pdf'              ·  rf matching network design [sic]
+NetLogo-7.0.3-64.tgz                ·  agent-based modeling
+Persistent_State_AI_Pitch.pptx      ·  pitch · persistent-state ai
+Team_818U_APSC103_Phase{1,2}.docx   ·  engineering design · coursework
 
-[  ok  ] reached target multi-user.target
-[ wait ] /opt/sleep . . . . . . . . . . . . . . . . . . unreachable
+
+$ ps aux | head
+USER      PID   %CPU  %MEM  STAT  COMMAND
+tt1nker   101   42.0  18.0  R     python ~/Projects/Doomsday/ten_tick.py
+tt1nker   102   31.0  22.0  R     ~/Projects/mempalace · indexing
+tt1nker   103   24.0  11.0  R     ~/Projects/solar/solar mission mars
+tt1nker   104   18.0   9.0  S     ~/Projects/AICharacter/story_distiller
+tt1nker   105    9.0   5.0  S     ~/Projects/voice-type · sensevoice
+tt1nker   106    4.0   3.0  S     ~/Projects/placecell/phase1Transformer
+tt1nker   666  100.0  inf   D     /opt/sleep                                   <defunct>
+
+
+$ crontab -l
+# m  h  dom mon dow   command
+@reboot                startx
+@daily                 pacman -Syu                          # rolling-release lifestyle
+@daily                 systemctl start coffee.service       # always succeeds
+*/15 *  *   *   *      git commit -am "checkpoint"          # save before forgetting
+@weekly                git push --all
+0   23 *   *   *       systemctl stop sleep.target          # always fails
+
+
+$ history | tail
+  988  cd ~/Projects/Doomsday && python ten_tick.py
+  989  vim npc.py
+  990  git commit -am "tension engine fix"
+  991  cd ../mempalace && claude /init
+  992  ./solar mission mars
+  993  cd ../voice-type && python voice_type_sensevoice.py
+  994  cat ~/Downloads/'Mathcing Network.pdf'
+  995  pacman -Ss rf-design
+  996  netlogo
+  997  history
+
+
+$ dmesg | tail
+[ 17234.01 ] dispatch: agent aigit -> /usr/bin/git
+[ 17234.92 ] hippocampus: place cells firing, mapping new context
+[ 17235.40 ] /opt/sleep: timeout, retry deferred
+[ 17235.41 ] WARN: too many tabs in /proc/working_memory
+[ 17236.10 ] kernel: loaded module compiler.ko v0.0.1
+[ 17237.55 ] solar: ephemeris computed · Δv = 3.6 km/s
+[ 17238.22 ] mempalace: zettelkasten · 4127 cards indexed
+[ 17239.04 ] panic: deadline approaching, gc busy
+
+
+$ tree ~/.config -L 1
+~/.config/
+├── KDE / plasma     ·  desktop
+├── konsole          ·  terminal
+├── dolphin          ·  file manager
+├── Code-OSS         ·  editor
+├── godot            ·  game engine
+├── android-sdk      ·  mobile builds
+├── fcitx5           ·  中文输入法
+├── fontconfig       ·  jetbrains mono everywhere
+└── discord          ·  ...you know
+
+
+$ df -h
+Filesystem            Size   Used  Avail  Use%   Mounted on
+/dev/working_memory   inf    99%   1%     99%    /                   · too many tabs
+/dev/curiosity        inf    inf   inf    99%    /var/agents
+/dev/discipline       50G    48G   2G     96%    /opt/courses        · APSC103
+/dev/snacks           tmpfs  full  -      100%   /home/coffee
+/dev/sleep            -      -     -      -      [unreachable]
+
+
+$ last | head
+tt1nker  pts/0  queens-u.ca       still online
+tt1nker  tty1   /dev/desk         still online
+tt1nker  pts/2  ~/Projects        still online
+tt1nker  web    github.com/TT1nKer  still online
+
+
+$ man tt1nker | head -10
+TT1NKER(1)                  User Commands                  TT1NKER(1)
+
+NAME
+       tt1nker — operator · builder · occasional compiler
+
+SYNOPSIS
+       tt1nker [-h] <project>
+
+DESCRIPTION
+       Builds small sharp things from raw materials. Linux first.
+       Suspends on /opt/sleep — rarely reaches it.
 
 
 $ cat ~/.ssh/contact.pub

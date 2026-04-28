@@ -24,7 +24,6 @@ $ pacman -Qe                              # explicitly installed
 ai/agent-workflows                        latest
 ai/mcp                                    latest
 ai/claude-api                             latest
-ai/persistent-memory                      experimental
 fullstack/vue                             stable
 fullstack/python                          stable
 fullstack/javascript                      stable
@@ -44,7 +43,6 @@ sim/narrative-agents                      experimental
 $ ls -lah ~/Projects
 drwxr-xr-x  AICharacter      ·  ai character builder · story distiller
 drwxr-xr-x  Doomsday         ·  《宇宙冷漠》life-sim · npcs · tension engine · ten-tick
-drwxr-xr-x  mempalace        ·  ai memory system · method-of-loci + zettelkasten · 100% recall
 drwxr-xr-x  solar            ·  c++17 solar system simulator · halo orbits · hohmann transfer
 drwxr-xr-x  placecell        ·  place-cell transformer · spatial cognition
 drwxr-xr-x  voice-type       ·  voice → text via sensevoice
@@ -63,11 +61,10 @@ Team_818U_APSC103_Phase{1,2}.docx   ·  engineering design · coursework
 $ ps aux | head
 USER      PID   %CPU  %MEM  STAT  COMMAND
 tt1nker   101   42.0  18.0  R     python ~/Projects/Doomsday/ten_tick.py
-tt1nker   102   31.0  22.0  R     ~/Projects/mempalace · indexing
-tt1nker   103   24.0  11.0  R     ~/Projects/solar/solar mission mars
-tt1nker   104   18.0   9.0  S     ~/Projects/AICharacter/story_distiller
-tt1nker   105    9.0   5.0  S     ~/Projects/voice-type · sensevoice
-tt1nker   106    4.0   3.0  S     ~/Projects/placecell/phase1Transformer
+tt1nker   102   31.0  18.0  R     ~/Projects/solar/solar mission mars
+tt1nker   103   24.0  11.0  S     ~/Projects/AICharacter/story_distiller
+tt1nker   104   12.0   7.0  S     ~/Projects/voice-type · sensevoice
+tt1nker   105    6.0   4.0  S     ~/Projects/placecell/phase1Transformer
 tt1nker   666  100.0  inf   D     /opt/sleep                                   <defunct>
 
 
@@ -85,12 +82,12 @@ $ history | tail
   988  cd ~/Projects/Doomsday && python ten_tick.py
   989  vim npc.py
   990  git commit -am "tension engine fix"
-  991  cd ../mempalace && claude /init
-  992  ./solar mission mars
-  993  cd ../voice-type && python voice_type_sensevoice.py
-  994  cat ~/Downloads/'Mathcing Network.pdf'
-  995  pacman -Ss rf-design
-  996  netlogo
+  991  cd ../solar && ./solar mission mars
+  992  cd ../voice-type && python voice_type_sensevoice.py
+  993  cat ~/Downloads/'Mathcing Network.pdf'
+  994  pacman -Ss rf-design
+  995  netlogo
+  996  cd ../AICharacter && python -m story_distiller
   997  history
 
 
@@ -101,7 +98,7 @@ $ dmesg | tail
 [ 17235.41 ] WARN: too many tabs in /proc/working_memory
 [ 17236.10 ] kernel: loaded module compiler.ko v0.0.1
 [ 17237.55 ] solar: ephemeris computed · Δv = 3.6 km/s
-[ 17238.22 ] mempalace: zettelkasten · 4127 cards indexed
+[ 17238.22 ] doomsday: tension delta +0.42 · npc_007 defected
 [ 17239.04 ] panic: deadline approaching, gc busy
 
 

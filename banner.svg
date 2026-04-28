@@ -1,46 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet" width="100%">
   <defs>
     <style><![CDATA[
-      @keyframes scan1 { 0% { transform: translateY(-20px); } 100% { transform: translateY(310px); } }
-      @keyframes scan2 { 0% { transform: translateY(-20px); } 100% { transform: translateY(310px); } }
-      @keyframes scanGlow { 0% { transform: translateY(-80px); } 100% { transform: translateY(310px); } }
-      @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
-      @keyframes glitchA { 0%, 92%, 100% { transform: translate(6px, 0); opacity: 0.22; }
-                           93% { transform: translate(11px, -2px); opacity: 0.55; }
-                           95% { transform: translate(2px, 1px); opacity: 0.10; }
-                           97% { transform: translate(8px, 0); opacity: 0.40; } }
-      @keyframes glitchB { 0%, 92%, 100% { transform: translate(-6px, 0); opacity: 0.22; }
-                           93% { transform: translate(-11px, 2px); opacity: 0.55; }
-                           95% { transform: translate(-2px, -1px); opacity: 0.10; }
-                           97% { transform: translate(-8px, 0); opacity: 0.40; } }
-      @keyframes mainFlicker { 0%, 92%, 100% { opacity: 1; }
-                               93% { opacity: 0.4; }
-                               94% { opacity: 1; }
-                               96% { opacity: 0.7; } }
-      @keyframes loadbar { 0% { width: 0; } 85% { width: 1040px; } 92% { width: 1040px; opacity: 0.7; } 100% { width: 0; opacity: 0; } }
-      @keyframes pulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+      @keyframes scan      { 0% { transform: translateY(-10px); } 100% { transform: translateY(310px); } }
+      @keyframes scanGlow  { 0% { transform: translateY(-80px); } 100% { transform: translateY(310px); } }
+      @keyframes pulse     { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }
+      @keyframes blink     { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0.25; } }
+      @keyframes ghostA {
+        0%, 95%, 100% { transform: translate(3px, 0);  opacity: 0.16; }
+        96%           { transform: translate(6px, -1px); opacity: 0.45; }
+        97%           { transform: translate(2px, 1px);  opacity: 0.30; }
+        98%           { transform: translate(3px, 0);    opacity: 0.16; }
+      }
+      @keyframes ghostB {
+        0%, 95%, 100% { transform: translate(-3px, 0);  opacity: 0.16; }
+        96%           { transform: translate(-6px, 1px); opacity: 0.45; }
+        97%           { transform: translate(-2px, -1px); opacity: 0.30; }
+        98%           { transform: translate(-3px, 0);    opacity: 0.16; }
+      }
 
-      .scan-main  { animation: scan1 3.2s linear infinite; }
-      .scan-sub   { animation: scan2 3.2s linear infinite; animation-delay: 1.6s; }
-      .scan-glow  { animation: scanGlow 3.2s linear infinite; }
-      .blink      { animation: blink 1.1s steps(2) infinite; }
-      .glitch-a   { animation: glitchA 3s linear infinite; }
-      .glitch-b   { animation: glitchB 3s linear infinite; }
-      .main-text  { animation: mainFlicker 3s linear infinite; }
-      .loadbar    { animation: loadbar 4s linear infinite; }
-      .pulse      { animation: pulse 1.4s ease-in-out infinite; }
+      .scan-main { animation: scan     4.5s linear infinite; }
+      .scan-glow { animation: scanGlow 4.5s linear infinite; }
+      .pulse     { animation: pulse    1.6s ease-in-out infinite; }
+      .blink     { animation: blink    1.4s steps(2) infinite; }
+      .ghost-a   { animation: ghostA   4s linear infinite; }
+      .ghost-b   { animation: ghostB   4s linear infinite; }
     ]]></style>
-
     <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="#ededed" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#ededed" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ededed" stop-opacity="0.30"/>
     </linearGradient>
   </defs>
 
   <rect width="1200" height="300" fill="#0a0a0a"/>
 
   <g stroke="#1a1a1d" stroke-width="0.5">
-    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="80"  x2="1200" y2="80"/>
     <line x1="0" y1="220" x2="1200" y2="220"/>
   </g>
 
@@ -52,33 +46,20 @@
   </g>
 
   <g font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#6b6b70" letter-spacing="3">
-    <text x="42" y="50">[ ID ] 0X_TT1NKER</text>
+    <text x="42"   y="50">[ ID ] 0X_TT1NKER</text>
     <text x="1158" y="50" text-anchor="end">[ STATUS ] <tspan fill="#ededed" class="pulse">ONLINE</tspan></text>
-    <text x="42" y="262">[ ARCH ] LINUX X86_64</text>
+    <text x="42"   y="262">[ ARCH ] LINUX X86_64</text>
     <text x="1158" y="262" text-anchor="end">[ BUILD ] 2026.04.<tspan fill="#ededed" class="blink">0042</tspan></text>
   </g>
 
-  <circle cx="1100" cy="46" r="4" fill="#ededed" class="blink"/>
-
-  <g font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="140" font-weight="200" letter-spacing="6">
-    <text x="600" y="190" text-anchor="middle" fill="#ededed" class="glitch-a">TT1NKER</text>
-    <text x="600" y="190" text-anchor="middle" fill="#ededed" class="glitch-b">TT1NKER</text>
-    <text x="600" y="190" text-anchor="middle" fill="#ededed" class="main-text">TT1NKER</text>
+  <g font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="140" font-weight="200" letter-spacing="6" text-anchor="middle">
+    <text x="600" y="190" fill="#ededed" class="ghost-a">TT1NKER</text>
+    <text x="600" y="190" fill="#ededed" class="ghost-b">TT1NKER</text>
+    <text x="600" y="190" fill="#ededed">TT1NKER</text>
   </g>
 
   <text x="600" y="232" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="16" fill="#6b6b70" letter-spacing="12">// SYSTEMS · AGENTS · SIM</text>
 
-  <rect x="0" y="0" width="1200" height="60" fill="url(#scanGrad)" opacity="0.20" class="scan-glow"/>
-  <rect x="0" y="0" width="1200" height="3" fill="#ededed" opacity="0.55" class="scan-main"/>
-  <rect x="0" y="0" width="1200" height="1" fill="#ededed" opacity="0.30" class="scan-sub"/>
-
-  <g stroke="#6b6b70" stroke-width="0.5">
-    <line x1="80" y1="46" x2="120" y2="46"/>
-    <line x1="1080" y1="46" x2="1120" y2="46"/>
-    <line x1="80" y1="254" x2="120" y2="254"/>
-    <line x1="1080" y1="254" x2="1120" y2="254"/>
-  </g>
-
-  <rect x="80" y="287" height="1" fill="#ededed" class="loadbar"/>
-  <text x="80" y="282" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="9" fill="#3a3a3d" letter-spacing="2">LOADING /HOME/TT1NKER</text>
+  <rect x="0" y="0" width="1200" height="60" fill="url(#scanGrad)" opacity="0.16" class="scan-glow"/>
+  <rect x="0" y="0" width="1200" height="2"  fill="#ededed"        opacity="0.40" class="scan-main"/>
 </svg>

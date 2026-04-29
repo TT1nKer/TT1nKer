@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 686 650" width="100%" preserveAspectRatio="xMidYMid meet">
+<defs>
+<style><![CDATA[
+.bg { fill: #0a0a0a; }
+.txt { font-family: ui-monospace, "JetBrains Mono", Menlo, Consolas, monospace; font-size: 15px; fill: #ededed; white-space: pre; }
+.prompt { fill: #6b6b70; }
+.thought { fill: #c8c8c8; }
+]]></style>
+</defs>
+<rect class="bg" width="686" height="650"/>
+<rect x="0.5" y="0.5" width="685" height="649" fill="none" stroke="rgba(255,255,255,0.06)"/>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0000;0.0042;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt prompt" x="24" y="42">$ </text>
+  <text class="txt" x="40.8" y="42">whoami</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0119;0.0142;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt" x="24" y="64">tt1nker</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0390;0.0479;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt prompt" x="24" y="108">$ </text>
+  <text class="txt" x="40.8" y="108">cat /etc/thesis</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0643;0.0698;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt" x="24" y="130">i want to control my computer.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0799;0.0916;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt" x="24" y="152">computer systems are the center — studied as emergent structure,</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1132;0.1242;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt" x="24" y="174">engineered upward from instructions, kernels, and the wires.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1445;0.1532;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt" x="24" y="196">other domains are field tests for the same lens.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1973;0.2306;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt prompt" x="24" y="240">$ </text>
+  <text class="txt" x="40.8" y="240">pacman -Qe                              # explicitly installed</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2925;0.3054;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt" x="24" y="262">systems    linux · c · c++ · asm · compilers · kernels · stm32 firmware</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3294;0.3414;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt" x="24" y="284">explored   ai agents · life sims · neural nets · spatial cognition</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3638;0.3738;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt" x="24" y="306">write      vue · python · javascript · single-file apps</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4203;0.4312;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt prompt" x="24" y="350">$ </text>
+  <text class="txt" x="40.8" y="350">tail -f ~/.thoughts</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4515;0.4619;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt thought" x="24" y="372">&gt; i want to control my computer, not be controlled by it.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4812;0.4921;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt thought" x="24" y="394">&gt; computers are machines to understand, modify, and command.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5124;0.5235;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt thought" x="24" y="416">&gt; engineering is the art of making ideas survive constraints.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5441;0.5530;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt thought" x="24" y="438">&gt; systems are where simple parts become behavior.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5696;0.5800;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt thought" x="24" y="460">&gt; emergence is not magic. it is structure under pressure.</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5993;0.6129;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt thought" x="24" y="482">&gt; i study compilers, ai agents, simulations, embedded, and full-stack tools</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6383;0.6467;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt thought" x="24" y="504">&gt; as different paths toward the same question:</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6623;0.6695;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt thought" x="24" y="526">&gt; how do systems run, adapt, and emerge?</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7110;0.7234;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt prompt" x="24" y="570">$ </text>
+  <text class="txt" x="40.8" y="570">cat ~/.ssh/contact.pub</text>
+</g>
+<g opacity="0">
+  <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7466;0.7501;0.7770;0.7890;1" dur="26.90s" repeatCount="indefinite"/>
+  <text class="txt" x="24" y="592">hostsjimi@gmail.com</text>
+</g>
+<text class="txt prompt" x="24" y="626">$ </text>
+<rect x="40.8" y="613" width="9" height="16" fill="#ededed">
+  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.05s" repeatCount="indefinite"/>
+</rect>
+</svg>

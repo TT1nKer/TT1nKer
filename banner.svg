@@ -36,16 +36,19 @@
       .ghost-a   { animation: ghostA   4s linear infinite; }
       .ghost-b   { animation: ghostB   4s linear infinite; }
 
-      .b0 { animation: bit  2s step-end infinite; }
-      .b1 { animation: bit  4s step-end infinite; }
-      .b2 { animation: bit  8s step-end infinite; }
-      .b3 { animation: bit 16s step-end infinite; }
-      .b4 { animation: bit 32s step-end infinite; }
-      .b5 { animation: bit 64s step-end infinite; }
+      /* bits get TWO animations (opacity from bit, fill flash from bitFlash).
+         multiple css `animation:` declarations from different classes don't
+         compose — the later rule wins via cascade — so we combine both
+         animations into a single declaration per bit class. */
+      .b0 { animation: bit  2s step-end infinite, bitFlash 64s step-end infinite; }
+      .b1 { animation: bit  4s step-end infinite, bitFlash 64s step-end infinite; }
+      .b2 { animation: bit  8s step-end infinite, bitFlash 64s step-end infinite; }
+      .b3 { animation: bit 16s step-end infinite, bitFlash 64s step-end infinite; }
+      .b4 { animation: bit 32s step-end infinite, bitFlash 64s step-end infinite; }
+      .b5 { animation: bit 64s step-end infinite, bitFlash 64s step-end infinite; }
 
       .ovf-on    { animation: overflowOn  64s step-end infinite; }
       .ovf-off   { animation: overflowOff 64s step-end infinite; }
-      .bit-flash { animation: bitFlash    64s step-end infinite; }
 
       .msg-c1 { animation: msgC1 256s step-end infinite; }
       .msg-c2 { animation: msgC2 256s step-end infinite; }
@@ -96,28 +99,28 @@
     <!-- b5 (MSB) -->
     <g transform="translate(20 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" class="b5 bit-flash"/>
+      <rect width="12" height="12" class="b5"/>
     </g>
     <g transform="translate(36 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" class="b4 bit-flash"/>
+      <rect width="12" height="12" class="b4"/>
     </g>
     <g transform="translate(52 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" class="b3 bit-flash"/>
+      <rect width="12" height="12" class="b3"/>
     </g>
     <!-- nibble gap -->
     <g transform="translate(72 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" class="b2 bit-flash"/>
+      <rect width="12" height="12" class="b2"/>
     </g>
     <g transform="translate(88 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" class="b1 bit-flash"/>
+      <rect width="12" height="12" class="b1"/>
     </g>
     <g transform="translate(104 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" class="b0 bit-flash"/>
+      <rect width="12" height="12" class="b0"/>
     </g>
   </g>
 

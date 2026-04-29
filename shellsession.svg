@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 672" width="100%" preserveAspectRatio="xMidYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 716" width="100%" preserveAspectRatio="xMidYMid meet">
 <defs>
 <style><![CDATA[
 .bg { fill: #0a0a0a; }
@@ -7,8 +7,8 @@
 .thought { fill: #c8c8c8; }
 ]]></style>
 </defs>
-<rect class="bg" width="840" height="672"/>
-<rect x="0.5" y="0.5" width="839" height="671" fill="none" stroke="rgba(255,255,255,0.06)"/>
+<rect class="bg" width="840" height="716"/>
+<rect x="0.5" y="0.5" width="839" height="715" fill="none" stroke="rgba(255,255,255,0.06)"/>
 <text class="txt prompt" x="24" y="42">$ </text>
 <text class="txt" x="42.0" y="42">whoami</text>
 <text class="txt" x="24" y="64">tt1nker</text>
@@ -35,7 +35,9 @@
 <text class="txt thought" x="24" y="526">&gt; how do systems run, adapt, and emerge?</text>
 <text class="txt prompt" x="24" y="570">$ </text>
 <text class="txt" x="42.0" y="570">cat ~/.ssh/contact.pub</text>
-<text class="txt" x="24" y="592">hostsjimi@gmail.com</text>
+<text class="txt" x="24" y="592">hostsjim22@gmail.com    # primary</text>
+<text class="txt" x="24" y="614">hostsjimi@gmail.com     # backup</text>
+<text class="txt" x="24" y="636">24yl6@queensu.ca        # student · queen's u</text>
 <rect x="24" y="28" width="98.8" height="26" fill="#0a0a0a">
   <animate attributeName="x" from="24" to="126.8"
            begin="0.000s" dur="0.360s" fill="freeze"/>
@@ -104,16 +106,22 @@
   <animate attributeName="x" from="24" to="292.4"
            begin="8.690s" dur="1.080s" fill="freeze"/>
 </rect>
-<rect x="24" y="578" width="212.6" height="26" fill="#0a0a0a">
-  <set attributeName="x" to="240.6" begin="9.970s" fill="freeze"/>
+<rect x="24" y="578" width="357.5" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="385.5" begin="9.970s" fill="freeze"/>
 </rect>
-<text class="txt prompt" x="24" y="626" opacity="0">
-  <set attributeName="opacity" to="1" begin="10.080s" fill="freeze"/>
+<rect x="24" y="600" width="347.2" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="375.2" begin="10.020s" fill="freeze"/>
+</rect>
+<rect x="24" y="622" width="481.7" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="509.7" begin="10.070s" fill="freeze"/>
+</rect>
+<text class="txt prompt" x="24" y="670" opacity="0">
+  <set attributeName="opacity" to="1" begin="10.180s" fill="freeze"/>
   $ 
 </text>
-<rect x="42.0" y="613" width="9" height="16" fill="#ededed" opacity="0">
-  <set attributeName="opacity" to="1" begin="10.080s" fill="freeze"/>
+<rect x="42.0" y="657" width="9" height="16" fill="#ededed" opacity="0">
+  <set attributeName="opacity" to="1" begin="10.180s" fill="freeze"/>
   <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1"
-           begin="10.080s" dur="1.05s" repeatCount="indefinite"/>
+           begin="10.180s" dur="1.05s" repeatCount="indefinite"/>
 </rect>
 </svg>

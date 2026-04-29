@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet" width="100%">
+  <!-- bits hit 0x3f every 64s. wait it out. four messages cycle through 4m 16s. -->
   <defs>
     <style><![CDATA[
       @keyframes scan      { 0% { transform: translateY(-10px); } 100% { transform: translateY(310px); } }
@@ -17,19 +18,39 @@
       }
       @keyframes bit { 0%, 49.999% { opacity: 0; } 50%, 100% { opacity: 1; } }
 
+      /* overflow window = last second of every 64s cycle.
+         63/64 = 98.4375%. show during [98.4375%, 100%]. */
+      @keyframes overflowOn  { 0%, 98.4375% { opacity: 0; } 98.4375%, 100% { opacity: 1; } }
+      @keyframes overflowOff { 0%, 98.4375% { opacity: 1; } 98.4375%, 100% { opacity: 0; } }
+      @keyframes bitFlash    { 0%, 98.4375% { fill: #ededed; } 98.4375%, 100% { fill: #ffffff; } }
+
+      /* multi-cycle messages: 4 messages, one per 64s slice within a 256s outer period.
+         m1 fires at 63-64s, m2 at 127-128s, m3 at 191-192s, m4 at 255-256s. */
+      @keyframes msgC1 { 0%, 24.6094%   { opacity: 0; } 24.6094%, 25%   { opacity: 1; } 25%,   100% { opacity: 0; } }
+      @keyframes msgC2 { 0%, 49.6094%   { opacity: 0; } 49.6094%, 50%   { opacity: 1; } 50%,   100% { opacity: 0; } }
+      @keyframes msgC3 { 0%, 74.6094%   { opacity: 0; } 74.6094%, 75%   { opacity: 1; } 75%,   100% { opacity: 0; } }
+      @keyframes msgC4 { 0%, 99.6094%   { opacity: 0; } 99.6094%, 100%  { opacity: 1; } }
+
       .scan-main { animation: scan     4.5s linear infinite; }
       .scan-glow { animation: scanGlow 4.5s linear infinite; }
       .ghost-a   { animation: ghostA   4s linear infinite; }
       .ghost-b   { animation: ghostB   4s linear infinite; }
 
-      .b0 { animation: bit   2s step-end infinite; }
-      .b1 { animation: bit   4s step-end infinite; }
-      .b2 { animation: bit   8s step-end infinite; }
-      .b3 { animation: bit  16s step-end infinite; }
-      .b4 { animation: bit  32s step-end infinite; }
-      .b5 { animation: bit  64s step-end infinite; }
-      .b6 { animation: bit 128s step-end infinite; }
-      .b7 { animation: bit 256s step-end infinite; }
+      .b0 { animation: bit  2s step-end infinite; }
+      .b1 { animation: bit  4s step-end infinite; }
+      .b2 { animation: bit  8s step-end infinite; }
+      .b3 { animation: bit 16s step-end infinite; }
+      .b4 { animation: bit 32s step-end infinite; }
+      .b5 { animation: bit 64s step-end infinite; }
+
+      .ovf-on    { animation: overflowOn  64s step-end infinite; }
+      .ovf-off   { animation: overflowOff 64s step-end infinite; }
+      .bit-flash { animation: bitFlash    64s step-end infinite; }
+
+      .msg-c1 { animation: msgC1 256s step-end infinite; }
+      .msg-c2 { animation: msgC2 256s step-end infinite; }
+      .msg-c3 { animation: msgC3 256s step-end infinite; }
+      .msg-c4 { animation: msgC4 256s step-end infinite; }
     ]]></style>
     <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="#ededed" stop-opacity="0"/>
@@ -53,53 +74,78 @@
 
   <g font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="13" fill="#6b6b70" letter-spacing="3">
     <text x="42"   y="50">[ ID ] 0X_TT1NKER</text>
-    <text x="966"  y="50">[ ALIVE ]</text>
+
+    <!-- ALIVE / 0x3F swap -->
+    <g>
+      <text x="966" y="50" class="ovf-off">[ ALIVE ]</text>
+      <text x="966" y="50" class="ovf-on" fill="#d96666">[ 0x3F ]</text>
+    </g>
+
     <text x="42"   y="262">[ ARCH ] LINUX X86_64</text>
     <text x="1158" y="262" text-anchor="end">[ DOB ] <tspan fill="#ededed">0b11111010101.1010.10110</tspan></text>
   </g>
 
+  <!-- 6-bit counter + red overflow cell on the left.
+       layout: [ ovf ] gap [ b5 b4 b3  b2 b1 b0 ] inside translate(1042 38). -->
   <g transform="translate(1042 38)">
+    <!-- overflow cell (phantom 7th bit, red, only visible at overflow window) -->
     <g transform="translate(0 0)">
-      <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" fill="#ededed" class="b7"/>
+      <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1" opacity="0.4"/>
+      <rect width="12" height="12" fill="#d96666" class="ovf-on"/>
     </g>
-    <g transform="translate(16 0)">
+    <!-- b5 (MSB) -->
+    <g transform="translate(20 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" fill="#ededed" class="b6"/>
+      <rect width="12" height="12" class="b5 bit-flash"/>
     </g>
-    <g transform="translate(32 0)">
+    <g transform="translate(36 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" fill="#ededed" class="b5"/>
+      <rect width="12" height="12" class="b4 bit-flash"/>
     </g>
-    <g transform="translate(48 0)">
+    <g transform="translate(52 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" fill="#ededed" class="b4"/>
+      <rect width="12" height="12" class="b3 bit-flash"/>
     </g>
-    <g transform="translate(68 0)">
+    <!-- nibble gap -->
+    <g transform="translate(72 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" fill="#ededed" class="b3"/>
+      <rect width="12" height="12" class="b2 bit-flash"/>
     </g>
-    <g transform="translate(84 0)">
+    <g transform="translate(88 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" fill="#ededed" class="b2"/>
+      <rect width="12" height="12" class="b1 bit-flash"/>
     </g>
-    <g transform="translate(100 0)">
+    <g transform="translate(104 0)">
       <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" fill="#ededed" class="b1"/>
-    </g>
-    <g transform="translate(116 0)">
-      <rect width="12" height="12" fill="none" stroke="#6b6b70" stroke-width="1"/>
-      <rect width="12" height="12" fill="#ededed" class="b0"/>
+      <rect width="12" height="12" class="b0 bit-flash"/>
     </g>
   </g>
 
-  <g font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="140" font-weight="200" letter-spacing="6" text-anchor="middle">
-    <text x="600" y="190" fill="#ededed" class="ghost-a">TT1NKER</text>
-    <text x="600" y="190" fill="#ededed" class="ghost-b">TT1NKER</text>
-    <text x="600" y="190" fill="#ededed">TT1NKER</text>
+  <!-- title (hidden during overflow window) -->
+  <g class="ovf-off">
+    <g font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="140" font-weight="200" letter-spacing="6" text-anchor="middle">
+      <text x="600" y="190" fill="#ededed" class="ghost-a">TT1NKER</text>
+      <text x="600" y="190" fill="#ededed" class="ghost-b">TT1NKER</text>
+      <text x="600" y="190" fill="#ededed">TT1NKER</text>
+    </g>
+    <text x="600" y="232" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="16" fill="#6b6b70" letter-spacing="12">// BUILD · STUDY · CONTROL</text>
   </g>
 
-  <text x="600" y="232" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="16" fill="#6b6b70" letter-spacing="12">// BUILD · STUDY · CONTROL</text>
+  <!-- big overflow texts (4 cycles, only one visible at a time) -->
+  <g font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-weight="300" letter-spacing="14" text-anchor="middle" fill="#d96666">
+    <text x="600" y="180" font-size="80" class="msg-c1">OVERFLOW</text>
+    <text x="600" y="180" font-size="80" class="msg-c2">RESET</text>
+    <text x="600" y="180" font-size="80" class="msg-c3">PANIC</text>
+    <text x="600" y="180" font-size="80" class="msg-c4">STILL HERE</text>
+  </g>
+
+  <!-- small comment line (per cycle) -->
+  <g font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="14" letter-spacing="6" text-anchor="middle" fill="#8a6060">
+    <text x="600" y="222" class="msg-c1">// observed.</text>
+    <text x="600" y="222" class="msg-c2">// you again?</text>
+    <text x="600" y="222" class="msg-c3">// stop.</text>
+    <text x="600" y="222" class="msg-c4">// please push something.</text>
+  </g>
 
   <rect x="0" y="0" width="1200" height="60" fill="url(#scanGrad)" opacity="0.16" class="scan-glow"/>
   <rect x="0" y="0" width="1200" height="2"  fill="#ededed"        opacity="0.40" class="scan-main"/>

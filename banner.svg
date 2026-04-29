@@ -18,18 +18,22 @@
       }
       @keyframes bit { 0%, 49.999% { opacity: 0; } 50%, 100% { opacity: 1; } }
 
-      /* overflow window = last second of every 64s cycle.
-         63/64 = 98.4375%. show during [98.4375%, 100%]. */
-      @keyframes overflowOn  { 0%, 98.4375% { opacity: 0; } 98.4375%, 100% { opacity: 1; } }
-      @keyframes overflowOff { 0%, 98.4375% { opacity: 1; } 98.4375%, 100% { opacity: 0; } }
-      @keyframes bitFlash    { 0%, 98.4375% { fill: #ededed; } 98.4375%, 100% { fill: #ffffff; } }
+      /* overflow window = 5 seconds: starts at t=63 (when bits naturally hit 0x3f),
+         lingers 5s, crossing cycle boundary into the start of the next 64s cycle.
+         63/64 = 98.4375% (start). 5s = 7.8125% of 64s, so the 4s-into-next-cycle
+         tail = 4/64 = 6.25%. */
+      @keyframes overflowOn  { 0%, 6.25% { opacity: 1; } 6.25%, 98.4375% { opacity: 0; } 98.4375%, 100% { opacity: 1; } }
+      @keyframes overflowOff { 0%, 6.25% { opacity: 0; } 6.25%, 98.4375% { opacity: 1; } 98.4375%, 100% { opacity: 0; } }
+      @keyframes bitFlash    { 0%, 6.25% { fill: #ffffff; } 6.25%, 98.4375% { fill: #ededed; } 98.4375%, 100% { fill: #ffffff; } }
 
       /* multi-cycle messages: 4 messages, one per 64s slice within a 256s outer period.
-         m1 fires at 63-64s, m2 at 127-128s, m3 at 191-192s, m4 at 255-256s. */
-      @keyframes msgC1 { 0%, 24.6094%   { opacity: 0; } 24.6094%, 25%   { opacity: 1; } 25%,   100% { opacity: 0; } }
-      @keyframes msgC2 { 0%, 49.6094%   { opacity: 0; } 49.6094%, 50%   { opacity: 1; } 50%,   100% { opacity: 0; } }
-      @keyframes msgC3 { 0%, 74.6094%   { opacity: 0; } 74.6094%, 75%   { opacity: 1; } 75%,   100% { opacity: 0; } }
-      @keyframes msgC4 { 0%, 99.6094%   { opacity: 0; } 99.6094%, 100%  { opacity: 1; } }
+         each shows for 5 seconds.
+         m1 t=63-68, m2 t=127-132, m3 t=191-196, m4 t=255-260 (wraps).
+         5s = 5/256 = 1.9531% of outer period. */
+      @keyframes msgC1 { 0%, 24.6094%   { opacity: 0; } 24.6094%, 26.5625% { opacity: 1; } 26.5625%, 100% { opacity: 0; } }
+      @keyframes msgC2 { 0%, 49.6094%   { opacity: 0; } 49.6094%, 51.5625% { opacity: 1; } 51.5625%, 100% { opacity: 0; } }
+      @keyframes msgC3 { 0%, 74.6094%   { opacity: 0; } 74.6094%, 76.5625% { opacity: 1; } 76.5625%, 100% { opacity: 0; } }
+      @keyframes msgC4 { 0%, 1.5625%    { opacity: 1; } 1.5625%, 99.6094%  { opacity: 0; } 99.6094%, 100% { opacity: 1; } }
 
       .scan-main { animation: scan     4.5s linear infinite; }
       .scan-glow { animation: scanGlow 4.5s linear infinite; }

@@ -99,7 +99,7 @@
     <text x="600" y="190" fill="#ededed">TT1NKER</text>
   </g>
 
-  <text x="600" y="232" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="16" fill="#6b6b70" letter-spacing="12">// SYSTEMS · AGENTS · SIM</text>
+  <text x="600" y="232" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace" font-size="16" fill="#6b6b70" letter-spacing="12">// BUILD · STUDY · CONTROL</text>
 
   <rect x="0" y="0" width="1200" height="60" fill="url(#scanGrad)" opacity="0.16" class="scan-glow"/>
   <rect x="0" y="0" width="1200" height="2"  fill="#ededed"        opacity="0.40" class="scan-main"/>

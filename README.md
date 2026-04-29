@@ -3,5 +3,5 @@
 </p>
 
 <p align="center">
-  <img src="shellsession.svg" alt="terminal session" width="100%">
+  <img src="session.svg" alt="terminal session" width="100%">
 </p>

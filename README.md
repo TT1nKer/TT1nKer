@@ -3,5 +3,5 @@
 </p>
 
 <p align="center">
-  <img src="term.svg" alt="terminal session" width="100%">
+  <img src="type.svg" alt="terminal session" width="100%">
 </p>

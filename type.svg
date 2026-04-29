@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 735 672" width="100%" preserveAspectRatio="xMidYMid meet">
+<defs>
+<style><![CDATA[
+.bg { fill: #0a0a0a; }
+.txt { font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace; font-size: 15px; fill: #ededed; }
+.prompt { fill: #6b6b70; }
+.thought { fill: #c8c8c8; }
+]]></style>
+</defs>
+<rect class="bg" width="735" height="672"/>
+<rect x="0.5" y="0.5" width="734" height="671" fill="none" stroke="rgba(255,255,255,0.06)"/>
+<text class="txt prompt" x="24.0" y="42" textLength="18.0" lengthAdjust="spacingAndGlyphs">$ </text>
+<text class="txt" x="42.0" y="42" textLength="54.0" lengthAdjust="spacingAndGlyphs">whoami</text>
+<text class="txt" x="24.0" y="64" textLength="63.0" lengthAdjust="spacingAndGlyphs">tt1nker</text>
+<text class="txt prompt" x="24.0" y="108" textLength="18.0" lengthAdjust="spacingAndGlyphs">$ </text>
+<text class="txt" x="42.0" y="108" textLength="135.0" lengthAdjust="spacingAndGlyphs">cat /etc/thesis</text>
+<text class="txt" x="24.0" y="130" textLength="270.0" lengthAdjust="spacingAndGlyphs">i want to control my computer.</text>
+<text class="txt" x="24.0" y="152" textLength="576.0" lengthAdjust="spacingAndGlyphs">computer systems are the center — studied as emergent structure,</text>
+<text class="txt" x="24.0" y="174" textLength="540.0" lengthAdjust="spacingAndGlyphs">engineered upward from instructions, kernels, and the wires.</text>
+<text class="txt" x="24.0" y="196" textLength="432.0" lengthAdjust="spacingAndGlyphs">other domains are field tests for the same lens.</text>
+<text class="txt prompt" x="24.0" y="240" textLength="18.0" lengthAdjust="spacingAndGlyphs">$ </text>
+<text class="txt" x="42.0" y="240" textLength="558.0" lengthAdjust="spacingAndGlyphs">pacman -Qe                              # explicitly installed</text>
+<text class="txt" x="24.0" y="262" textLength="639.0" lengthAdjust="spacingAndGlyphs">systems    linux · c · c++ · asm · compilers · kernels · stm32 firmware</text>
+<text class="txt" x="24.0" y="284" textLength="594.0" lengthAdjust="spacingAndGlyphs">explored   ai agents · life sims · neural nets · spatial cognition</text>
+<text class="txt" x="24.0" y="306" textLength="495.0" lengthAdjust="spacingAndGlyphs">write      vue · python · javascript · single-file apps</text>
+<text class="txt prompt" x="24.0" y="350" textLength="18.0" lengthAdjust="spacingAndGlyphs">$ </text>
+<text class="txt" x="42.0" y="350" textLength="171.0" lengthAdjust="spacingAndGlyphs">tail -f ~/.thoughts</text>
+<text class="txt thought" x="24.0" y="372" textLength="513.0" lengthAdjust="spacingAndGlyphs">&gt; i want to control my computer, not be controlled by it.</text>
+<text class="txt thought" x="24.0" y="394" textLength="540.0" lengthAdjust="spacingAndGlyphs">&gt; computers are machines to understand, modify, and command.</text>
+<text class="txt thought" x="24.0" y="416" textLength="549.0" lengthAdjust="spacingAndGlyphs">&gt; engineering is the art of making ideas survive constraints.</text>
+<text class="txt thought" x="24.0" y="438" textLength="441.0" lengthAdjust="spacingAndGlyphs">&gt; systems are where simple parts become behavior.</text>
+<text class="txt thought" x="24.0" y="460" textLength="513.0" lengthAdjust="spacingAndGlyphs">&gt; emergence is not magic. it is structure under pressure.</text>
+<text class="txt thought" x="24.0" y="482" textLength="675.0" lengthAdjust="spacingAndGlyphs">&gt; i study compilers, ai agents, simulations, embedded, and full-stack tools</text>
+<text class="txt thought" x="24.0" y="504" textLength="414.0" lengthAdjust="spacingAndGlyphs">&gt; as different paths toward the same question:</text>
+<text class="txt thought" x="24.0" y="526" textLength="360.0" lengthAdjust="spacingAndGlyphs">&gt; how do systems run, adapt, and emerge?</text>
+<text class="txt prompt" x="24.0" y="570" textLength="18.0" lengthAdjust="spacingAndGlyphs">$ </text>
+<text class="txt" x="42.0" y="570" textLength="198.0" lengthAdjust="spacingAndGlyphs">cat ~/.ssh/contact.pub</text>
+<text class="txt" x="24.0" y="592" textLength="171.0" lengthAdjust="spacingAndGlyphs">hostsjimi@gmail.com</text>
+<rect x="24" y="28" width="78.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="97.0"
+           begin="0.000s" dur="0.360s" fill="freeze"/>
+</rect>
+<rect x="24" y="50" width="69.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="88.0"
+           begin="0.360s" dur="0.180s" fill="freeze"/>
+</rect>
+<rect x="24" y="94" width="159.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="178.0"
+           begin="1.090s" dur="0.765s" fill="freeze"/>
+</rect>
+<rect x="24" y="116" width="276.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="295.0"
+           begin="1.855s" dur="0.540s" fill="freeze"/>
+</rect>
+<rect x="24" y="138" width="582.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="601.0"
+           begin="2.395s" dur="1.152s" fill="freeze"/>
+</rect>
+<rect x="24" y="160" width="546.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="565.0"
+           begin="3.547s" dur="1.080s" fill="freeze"/>
+</rect>
+<rect x="24" y="182" width="438.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="457.0"
+           begin="4.627s" dur="0.864s" fill="freeze"/>
+</rect>
+<rect x="24" y="226" width="582.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="601.0"
+           begin="6.241s" dur="2.880s" fill="freeze"/>
+</rect>
+<rect x="24" y="248" width="645.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="664.0"
+           begin="9.121s" dur="1.278s" fill="freeze"/>
+</rect>
+<rect x="24" y="270" width="600.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="619.0"
+           begin="10.399s" dur="1.188s" fill="freeze"/>
+</rect>
+<rect x="24" y="292" width="501.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="520.0"
+           begin="11.587s" dur="0.990s" fill="freeze"/>
+</rect>
+<rect x="24" y="336" width="195.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="214.0"
+           begin="13.327s" dur="0.945s" fill="freeze"/>
+</rect>
+<rect x="24" y="358" width="519.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="538.0"
+           begin="14.272s" dur="1.026s" fill="freeze"/>
+</rect>
+<rect x="24" y="380" width="546.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="565.0"
+           begin="15.298s" dur="1.080s" fill="freeze"/>
+</rect>
+<rect x="24" y="402" width="555.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="574.0"
+           begin="16.378s" dur="1.098s" fill="freeze"/>
+</rect>
+<rect x="24" y="424" width="447.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="466.0"
+           begin="17.476s" dur="0.882s" fill="freeze"/>
+</rect>
+<rect x="24" y="446" width="519.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="538.0"
+           begin="18.358s" dur="1.026s" fill="freeze"/>
+</rect>
+<rect x="24" y="468" width="681.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="700.0"
+           begin="19.384s" dur="1.350s" fill="freeze"/>
+</rect>
+<rect x="24" y="490" width="420.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="439.0"
+           begin="20.734s" dur="0.828s" fill="freeze"/>
+</rect>
+<rect x="24" y="512" width="366.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="385.0"
+           begin="21.562s" dur="0.720s" fill="freeze"/>
+</rect>
+<rect x="24" y="556" width="222.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="241.0"
+           begin="23.032s" dur="1.080s" fill="freeze"/>
+</rect>
+<rect x="24" y="578" width="177.0" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="196.0"
+           begin="24.112s" dur="0.342s" fill="freeze"/>
+</rect>
+<text class="txt prompt" x="24" y="626" textLength="18.0" lengthAdjust="spacingAndGlyphs" opacity="0">
+  <set attributeName="opacity" to="1" begin="25.004s" fill="freeze"/>
+  $ 
+</text>
+<rect x="42.0" y="613" width="9" height="16" fill="#ededed" opacity="0">
+  <set attributeName="opacity" to="1" begin="25.004s" fill="freeze"/>
+  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1"
+           begin="25.004s" dur="1.05s" repeatCount="indefinite"/>
+</rect>
+</svg>

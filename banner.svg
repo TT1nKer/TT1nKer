@@ -44,20 +44,26 @@
          multiple css `animation:` declarations from different classes don't
          compose — the later rule wins via cascade — so we combine both
          animations into a single declaration per bit class. */
-      .b0 { animation: bit  2s step-end infinite, bitFlash 64s step-end infinite; }
-      .b1 { animation: bit  4s step-end infinite, bitFlash 64s step-end infinite; }
-      .b2 { animation: bit  8s step-end infinite, bitFlash 64s step-end infinite; }
-      .b3 { animation: bit 16s step-end infinite, bitFlash 64s step-end infinite; }
-      .b4 { animation: bit 32s step-end infinite, bitFlash 64s step-end infinite; }
-      .b5 { animation: bit 64s step-end infinite, bitFlash 64s step-end infinite; }
+      /* animation-delay: -6s shifts all egg-related animations past their
+         wraparound zones, so a fresh page load starts in the "normal" state
+         (no message visible, title visible, bits not flashing). without this,
+         msgC4 and ovf-* wrap-around windows are active at t=0 and the user
+         sees "STILL HERE" + hidden title for several seconds on every refresh.
+         all egg animations get the same shift to stay in sync. */
+      .b0 { animation: bit  2s step-end infinite, bitFlash 64s step-end infinite; animation-delay: -6s; }
+      .b1 { animation: bit  4s step-end infinite, bitFlash 64s step-end infinite; animation-delay: -6s; }
+      .b2 { animation: bit  8s step-end infinite, bitFlash 64s step-end infinite; animation-delay: -6s; }
+      .b3 { animation: bit 16s step-end infinite, bitFlash 64s step-end infinite; animation-delay: -6s; }
+      .b4 { animation: bit 32s step-end infinite, bitFlash 64s step-end infinite; animation-delay: -6s; }
+      .b5 { animation: bit 64s step-end infinite, bitFlash 64s step-end infinite; animation-delay: -6s; }
 
-      .ovf-on    { animation: overflowOn  64s step-end infinite; }
-      .ovf-off   { animation: overflowOff 64s step-end infinite; }
+      .ovf-on    { animation: overflowOn  64s step-end infinite; animation-delay: -6s; }
+      .ovf-off   { animation: overflowOff 64s step-end infinite; animation-delay: -6s; }
 
-      .msg-c1 { animation: msgC1 256s step-end infinite; }
-      .msg-c2 { animation: msgC2 256s step-end infinite; }
-      .msg-c3 { animation: msgC3 256s step-end infinite; }
-      .msg-c4 { animation: msgC4 256s step-end infinite; }
+      .msg-c1 { animation: msgC1 256s step-end infinite; animation-delay: -6s; }
+      .msg-c2 { animation: msgC2 256s step-end infinite; animation-delay: -6s; }
+      .msg-c3 { animation: msgC3 256s step-end infinite; animation-delay: -6s; }
+      .msg-c4 { animation: msgC4 256s step-end infinite; animation-delay: -6s; }
     ]]></style>
     <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="#ededed" stop-opacity="0"/>

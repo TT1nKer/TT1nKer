@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 798 628" width="100%" preserveAspectRatio="xMidYMid meet">
+<defs>
+<style><![CDATA[
+.bg { fill: #0a0a0a; }
+.txt { font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace; font-size: 15px; fill: #ededed; }
+.prompt { fill: #6b6b70; }
+.thought { fill: #c8c8c8; }
+]]></style>
+</defs>
+<rect class="bg" width="798" height="628"/>
+<rect x="0.5" y="0.5" width="797" height="627" fill="none" stroke="rgba(255,255,255,0.06)"/>
+<text class="txt prompt" x="24" y="42">$ </text>
+<text class="txt" x="42.0" y="42">whoami</text>
+<text class="txt" x="24" y="64">tt1nker</text>
+<text class="txt prompt" x="24" y="108">$ </text>
+<text class="txt" x="42.0" y="108">cat /etc/thesis</text>
+<text class="txt" x="24" y="130">i build and study controllable systems —</text>
+<text class="txt" x="24" y="152">from compilers and machines to ai agents and emergent simulations.</text>
+<text class="txt prompt" x="24" y="196">$ </text>
+<text class="txt" x="42.0" y="196">pacman -Qe                              # explicitly installed</text>
+<text class="txt" x="24" y="218">systems    linux · c · c++ · asm · compilers · kernels · stm32 firmware</text>
+<text class="txt" x="24" y="240">explored   ai agents · life sims · neural nets · spatial cognition</text>
+<text class="txt" x="24" y="262">write      vue · python · javascript · single-file apps</text>
+<text class="txt prompt" x="24" y="306">$ </text>
+<text class="txt" x="42.0" y="306">tail -f ~/.thoughts</text>
+<text class="txt thought" x="24" y="328">&gt; i want to control my computer, not the other way around.</text>
+<text class="txt thought" x="24" y="350">&gt; arch + nvim + tmux. nothing fancy.</text>
+<text class="txt thought" x="24" y="372">&gt; i'd rather understand a thing than just use it.</text>
+<text class="txt thought" x="24" y="394">&gt; compilers, kernels, agents, sims — same itch, different angles.</text>
+<text class="txt thought" x="24" y="416">&gt; half of these repos are works in progress. that's fine.</text>
+<text class="txt thought" x="24" y="438">&gt; if i can't read it end-to-end, i don't trust it yet.</text>
+<text class="txt prompt" x="24" y="482">$ </text>
+<text class="txt" x="42.0" y="482">cat ~/.ssh/contact.pub</text>
+<text class="txt" x="24" y="504">hostsjim22@gmail.com    # primary</text>
+<text class="txt" x="24" y="526">hostsjimi@gmail.com     # backup</text>
+<text class="txt" x="24" y="548">24yl6@queensu.ca        # student · queen's u</text>
+<rect x="24" y="28" width="98.8" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="126.8"
+           begin="0.000s" dur="0.360s" fill="freeze"/>
+</rect>
+<rect x="24" y="50" width="88.4" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="116.4" begin="0.560s" fill="freeze"/>
+</rect>
+<rect x="24" y="94" width="191.9" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="219.9"
+           begin="1.070s" dur="0.765s" fill="freeze"/>
+</rect>
+<rect x="24" y="116" width="430.0" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="458.0" begin="2.035s" fill="freeze"/>
+</rect>
+<rect x="24" y="138" width="699.1" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="727.1" begin="2.085s" fill="freeze"/>
+</rect>
+<rect x="24" y="182" width="678.4" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="706.4"
+           begin="2.695s" dur="2.880s" fill="freeze"/>
+</rect>
+<rect x="24" y="204" width="750.8" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="778.8" begin="5.775s" fill="freeze"/>
+</rect>
+<rect x="24" y="226" width="699.1" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="727.1" begin="5.825s" fill="freeze"/>
+</rect>
+<rect x="24" y="248" width="585.2" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="613.2" begin="5.875s" fill="freeze"/>
+</rect>
+<rect x="24" y="292" width="233.3" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="261.4"
+           begin="6.485s" dur="0.945s" fill="freeze"/>
+</rect>
+<rect x="24" y="314" width="616.3" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="644.3" begin="7.630s" fill="freeze"/>
+</rect>
+<rect x="24" y="336" width="388.6" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="416.6" begin="7.680s" fill="freeze"/>
+</rect>
+<rect x="24" y="358" width="523.1" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="551.1" begin="7.730s" fill="freeze"/>
+</rect>
+<rect x="24" y="380" width="688.8" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="716.8" begin="7.780s" fill="freeze"/>
+</rect>
+<rect x="24" y="402" width="605.9" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="633.9" begin="7.830s" fill="freeze"/>
+</rect>
+<rect x="24" y="424" width="574.9" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="602.9" begin="7.880s" fill="freeze"/>
+</rect>
+<rect x="24" y="468" width="264.4" height="26" fill="#0a0a0a">
+  <animate attributeName="x" from="24" to="292.4"
+           begin="8.490s" dur="1.080s" fill="freeze"/>
+</rect>
+<rect x="24" y="490" width="357.5" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="385.5" begin="9.770s" fill="freeze"/>
+</rect>
+<rect x="24" y="512" width="347.2" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="375.2" begin="9.820s" fill="freeze"/>
+</rect>
+<rect x="24" y="534" width="481.7" height="26" fill="#0a0a0a">
+  <set attributeName="x" to="509.7" begin="9.870s" fill="freeze"/>
+</rect>
+<text class="txt prompt" x="24" y="582" opacity="0">
+  <set attributeName="opacity" to="1" begin="9.980s" fill="freeze"/>
+  $ 
+</text>
+<rect x="42.0" y="569" width="9" height="16" fill="#ededed" opacity="0">
+  <set attributeName="opacity" to="1" begin="9.980s" fill="freeze"/>
+  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1"
+           begin="9.980s" dur="1.05s" repeatCount="indefinite"/>
+</rect>
+</svg>

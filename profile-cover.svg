@@ -11,15 +11,15 @@
   </g>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="600">
-    <text x="76" y="91" fill="#8d8d92" font-size="12" letter-spacing="2">SYSTEM ENGINEER / SYSTEM ARTIST</text>
+    <text x="76" y="91" fill="#8d8d92" font-size="12" letter-spacing="2">SYSTEMS / TOOLS</text>
     <text x="1204" y="91" text-anchor="end" fill="#8d8d92" font-size="12" letter-spacing="2">TTINKER.NET</text>
 
     <text x="76" y="376" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="142" font-weight="800" letter-spacing="0">TT1nKer</text>
-    <text x="76" y="421" fill="#8d8d92" font-size="12" letter-spacing="1.6">LESS SURFACE · MORE STRUCTURE</text>
+    <text x="76" y="421" fill="#8d8d92" font-size="12" letter-spacing="1.6">STRUCTURE &gt; SURFACE</text>
 
     <g transform="translate(812 154)">
       <rect width="6" height="62" fill="#ef5a46"/>
-      <text x="28" y="14" fill="#8d8d92" font-size="10" letter-spacing="2">CURRENT SIGNAL</text>
+      <text x="28" y="14" fill="#ef5a46" font-size="10" letter-spacing="2">● CURRENT</text>
       <text x="28" y="50" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">ChatCommons</text>
       <circle cx="379" cy="46" r="5" fill="#ef5a46">
         <animate attributeName="opacity" values="1;.35;1" dur="2.8s" repeatCount="indefinite"/>
@@ -28,13 +28,13 @@
 
     <g transform="translate(812 268)">
       <rect width="6" height="62" fill="#17aeb8"/>
-      <text x="28" y="14" fill="#8d8d92" font-size="10" letter-spacing="2">WORKING TOOLS</text>
+      <text x="28" y="14" fill="#17aeb8" font-size="10" letter-spacing="2">■ LIVE</text>
       <text x="28" y="50" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">opensender · pomodoro</text>
     </g>
 
     <g transform="translate(812 382)">
       <rect width="6" height="62" fill="#7357d8"/>
-      <text x="28" y="14" fill="#8d8d92" font-size="10" letter-spacing="2">BUILDING / STUDYING</text>
+      <text x="28" y="14" fill="#a995ff" font-size="10" letter-spacing="2">△ BUILD</text>
       <text x="28" y="50" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">fstCC · adaptiveNet · hwine</text>
     </g>
   </g>

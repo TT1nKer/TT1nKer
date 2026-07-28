@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://ttinker.net"><strong>ENTER TTINKER.NET</strong></a> &nbsp;·&nbsp;
-  <a href="https://github.com/TT1nKer?tab=repositories">ALL SYSTEMS</a> &nbsp;·&nbsp;
-  <a href="https://github.com/TT1nKer/chatcommons">CURRENT SIGNAL</a>
+  <a href="https://ttinker.net"><strong>TTINKER.NET ↗</strong></a> &nbsp;·&nbsp;
+  <a href="https://github.com/TT1nKer?tab=repositories">REPOS</a> &nbsp;·&nbsp;
+  <a href="https://github.com/TT1nKer/chatcommons">● CHATCOMMONS</a>
 </p>
 
 I build systems that make their structure visible: protocols, runtimes,

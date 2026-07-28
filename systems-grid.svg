@@ -8,30 +8,30 @@
     <path d="M350 74V409M598 74V409M864 74V409"/>
   </g>
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="600">
-    <text x="76" y="45" fill="#f1efe7" font-size="12" letter-spacing="2">SYSTEM LEDGER</text>
-    <text x="1204" y="45" text-anchor="end" fill="#8d8d92" font-size="10" letter-spacing="1.5">07 SYSTEMS / 03 STATES</text>
+    <text x="76" y="45" fill="#f1efe7" font-size="12" letter-spacing="2">INDEX</text>
+    <text x="1204" y="45" text-anchor="end" fill="#8d8d92" font-size="10" letter-spacing="1.5">07 / 03</text>
 
     <g fill="#8d8d92" font-size="9" letter-spacing="2">
-      <text x="76" y="106">SYSTEM</text><text x="374" y="106">STATE</text>
-      <text x="622" y="106">DOMAIN</text><text x="888" y="106">EVIDENCE</text>
+      <text x="76" y="106">ID</text><text x="374" y="106">STATE</text>
+      <text x="622" y="106">FIELD</text><text x="888" y="106">PROOF</text>
     </g>
 
     <g font-size="12">
       <rect x="52" y="132" width="5" height="58" fill="#ef5a46"/>
       <text x="76" y="167" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">ChatCommons</text>
-      <text x="374" y="167" fill="#ef5a46">FRIENDS ALPHA</text><text x="622" y="167" fill="#b7b7ba">P2P PROTOCOL</text><text x="888" y="167" fill="#b7b7ba">SIGNED EVENTS · QUIC · TUI</text>
+      <text x="374" y="167" fill="#ef5a46">● ALPHA</text><text x="622" y="167" fill="#b7b7ba">P2P</text><text x="888" y="167" fill="#b7b7ba">SIGNED · QUIC · TUI</text>
 
       <rect x="52" y="190" width="5" height="58" fill="#17aeb8"/>
       <text x="76" y="225" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">opensender</text>
-      <text x="374" y="225" fill="#17aeb8">WORKING</text><text x="622" y="225" fill="#b7b7ba">NETWORK TOOL</text><text x="888" y="225" fill="#b7b7ba">TRANSFER CLIENT</text>
+      <text x="374" y="225" fill="#17aeb8">■ LIVE</text><text x="622" y="225" fill="#b7b7ba">NET</text><text x="888" y="225" fill="#b7b7ba">TRANSFER</text>
 
       <rect x="52" y="248" width="5" height="58" fill="#17aeb8"/>
       <text x="76" y="283" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">pomodoro</text>
-      <text x="374" y="283" fill="#17aeb8">SHIPPED</text><text x="622" y="283" fill="#b7b7ba">FOCUS TOOL</text><text x="888" y="283" fill="#b7b7ba">TTINKER.NET / POMODORO</text>
+      <text x="374" y="283" fill="#17aeb8">■ LIVE</text><text x="622" y="283" fill="#b7b7ba">FOCUS</text><text x="888" y="283" fill="#b7b7ba">TTINKER.NET / POMODORO</text>
 
       <rect x="52" y="306" width="5" height="58" fill="#7357d8"/>
       <text x="76" y="341" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">fstCC</text>
-      <text x="374" y="341" fill="#a995ff">BUILDING</text><text x="622" y="341" fill="#b7b7ba">RISC-V COMPILER</text><text x="888" y="341" fill="#b7b7ba">BOOTSTRAP STAGE 0</text>
+      <text x="374" y="341" fill="#a995ff">△ BUILD</text><text x="622" y="341" fill="#b7b7ba">RISC-V</text><text x="888" y="341" fill="#b7b7ba">BOOTSTRAP 0</text>
 
       <text x="76" y="393" fill="#8d8d92">MORE</text><text x="374" y="393" fill="#8d8d92">STUDYING</text><text x="622" y="393" fill="#b7b7ba">adaptiveNet · hwine · solar</text><text x="888" y="393" fill="#8d8d92">REPOSITORIES</text>
     </g>

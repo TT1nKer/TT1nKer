@@ -1,45 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 390" role="img" aria-labelledby="title desc">
-  <title id="title">TT1nKer system map</title>
-  <desc id="desc">Current projects arranged in three restrained information columns.</desc>
-  <rect width="1280" height="390" fill="#0b0b0d"/>
-  <path d="M52 1H1228M52 389H1228" stroke="#f1efe7" stroke-opacity=".14"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 410" role="img" aria-labelledby="title desc">
+  <title id="title">TT1nKer system ledger</title>
+  <desc id="desc">A structured ledger of projects, their state, domain, and evidence.</desc>
+  <rect width="1280" height="410" fill="#0b0b0d"/>
+  <g stroke="#f1efe7" stroke-opacity=".13">
+    <path d="M52 1H1228M52 409H1228M52 1V409M1228 1V409"/>
+    <path d="M52 74H1228M52 132H1228M52 190H1228M52 248H1228M52 306H1228M52 364H1228"/>
+    <path d="M350 74V409M598 74V409M864 74V409"/>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="600">
+    <text x="76" y="45" fill="#f1efe7" font-size="12" letter-spacing="2">SYSTEM LEDGER</text>
+    <text x="1204" y="45" text-anchor="end" fill="#8d8d92" font-size="10" letter-spacing="1.5">07 SYSTEMS / 03 STATES</text>
 
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <text x="52" y="48" fill="#8d8d92" font-size="11" font-weight="600" letter-spacing="2">SELECTED SYSTEMS</text>
-
-    <g transform="translate(52 82)">
-      <rect width="5" height="248" fill="#ef5a46"/>
-      <text x="28" y="20" fill="#8d8d92" font-size="10" font-weight="600" letter-spacing="2">CURRENT</text>
-      <text x="28" y="73" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">ChatCommons</text>
-      <text x="28" y="108" fill="#ef5a46" font-size="11" font-weight="600">FRIENDS ALPHA</text>
-      <path d="M28 136H348" stroke="#f1efe7" stroke-opacity=".12"/>
-      <text x="28" y="172" fill="#b7b7ba" font-size="11">SIGNED EVENTS</text>
-      <text x="28" y="202" fill="#b7b7ba" font-size="11">REPLACEABLE HOME SERVERS</text>
-      <text x="28" y="232" fill="#b7b7ba" font-size="11">DIRECT / RELAYED QUIC</text>
+    <g fill="#8d8d92" font-size="9" letter-spacing="2">
+      <text x="76" y="106">SYSTEM</text><text x="374" y="106">STATE</text>
+      <text x="622" y="106">DOMAIN</text><text x="888" y="106">EVIDENCE</text>
     </g>
 
-    <g transform="translate(452 82)">
-      <rect width="5" height="248" fill="#17aeb8"/>
-      <text x="28" y="20" fill="#8d8d92" font-size="10" font-weight="600" letter-spacing="2">TOOLS</text>
-      <text x="28" y="73" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">opensender</text>
-      <text x="28" y="104" fill="#b7b7ba" font-size="11">NETWORK TRANSFER · WORKING</text>
-      <path d="M28 132H348" stroke="#f1efe7" stroke-opacity=".12"/>
-      <text x="28" y="178" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">pomodoro</text>
-      <text x="28" y="209" fill="#b7b7ba" font-size="11">FOCUS TOOL · SHIPPED</text>
-    </g>
+    <g font-size="12">
+      <rect x="52" y="132" width="5" height="58" fill="#ef5a46"/>
+      <text x="76" y="167" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">ChatCommons</text>
+      <text x="374" y="167" fill="#ef5a46">FRIENDS ALPHA</text><text x="622" y="167" fill="#b7b7ba">P2P PROTOCOL</text><text x="888" y="167" fill="#b7b7ba">SIGNED EVENTS · QUIC · TUI</text>
 
-    <g transform="translate(852 82)">
-      <rect width="5" height="248" fill="#7357d8"/>
-      <text x="28" y="20" fill="#8d8d92" font-size="10" font-weight="600" letter-spacing="2">BUILDING / STUDYING</text>
-      <text x="28" y="72" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">fstCC</text>
-      <text x="152" y="72" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">adaptiveNet</text>
-      <text x="28" y="112" fill="#b7b7ba" font-size="11">COMPILER</text>
-      <text x="152" y="112" fill="#b7b7ba" font-size="11">COMPLEX SYSTEMS</text>
-      <path d="M28 140H348" stroke="#f1efe7" stroke-opacity=".12"/>
-      <text x="28" y="186" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">hwine</text>
-      <text x="152" y="186" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">solar</text>
-      <text x="28" y="226" fill="#b7b7ba" font-size="11">HARDWARE</text>
-      <text x="152" y="226" fill="#b7b7ba" font-size="11">ORBITAL LAB</text>
+      <rect x="52" y="190" width="5" height="58" fill="#17aeb8"/>
+      <text x="76" y="225" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">opensender</text>
+      <text x="374" y="225" fill="#17aeb8">WORKING</text><text x="622" y="225" fill="#b7b7ba">NETWORK TOOL</text><text x="888" y="225" fill="#b7b7ba">TRANSFER CLIENT</text>
+
+      <rect x="52" y="248" width="5" height="58" fill="#17aeb8"/>
+      <text x="76" y="283" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">pomodoro</text>
+      <text x="374" y="283" fill="#17aeb8">SHIPPED</text><text x="622" y="283" fill="#b7b7ba">FOCUS TOOL</text><text x="888" y="283" fill="#b7b7ba">TTINKER.NET / POMODORO</text>
+
+      <rect x="52" y="306" width="5" height="58" fill="#7357d8"/>
+      <text x="76" y="341" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">fstCC</text>
+      <text x="374" y="341" fill="#a995ff">BUILDING</text><text x="622" y="341" fill="#b7b7ba">RISC-V COMPILER</text><text x="888" y="341" fill="#b7b7ba">BOOTSTRAP STAGE 0</text>
+
+      <text x="76" y="393" fill="#8d8d92">MORE</text><text x="374" y="393" fill="#8d8d92">STUDYING</text><text x="622" y="393" fill="#b7b7ba">adaptiveNet · hwine · solar</text><text x="888" y="393" fill="#8d8d92">REPOSITORIES</text>
     </g>
   </g>
 </svg>

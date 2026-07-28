@@ -10,9 +10,8 @@
   <a href="https://github.com/TT1nKer/chatcommons">CURRENT SIGNAL</a>
 </p>
 
-I follow questions until they become systems that can be built, inspected, and
-tested. Protocols, runtimes, complex systems, hardware experiments, and small
-tools for problems I actually had.
+I build systems that make their structure visible: protocols, runtimes,
+hardware experiments, and small tools for problems I actually had.
 
 <p align="center">
   <img src="systems-grid.svg" alt="System map: current work, shipped tools, bootstrap compiler, and experiments" width="100%">
@@ -31,7 +30,7 @@ friends-and-contributors alpha, not a production service.
 **Building:** [fstCC](https://github.com/TT1nKer/fstCC) · [ChatCommons](https://github.com/TT1nKer/chatcommons)<br>
 **Studying:** [adaptiveNet](https://github.com/TT1nKer/adaptiveNet) · [hwine](https://github.com/TT1nKer/hwine) · [solar](https://github.com/TT1nKer/solar)
 
-`QUESTION → MODEL → BUILD → TEST → REVISE → ?`
+`LESS SURFACE · MORE STRUCTURE · LESS MAGIC · MORE CONTROL`
 
 AI is part of the toolchain. Status comes from what can be built, observed, or
 reproduced—not from how polished the claim sounds.

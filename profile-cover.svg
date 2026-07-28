@@ -1,29 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 500" role="img" aria-labelledby="title desc">
-  <title id="title">TT1nKer</title>
-  <desc id="desc">A restrained black cover with the TT1nKer wordmark and a thin colored signal line.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <title id="title">TT1nKer systems profile</title>
+  <desc id="desc">TT1nKer identity and a live ledger of current systems, tools, and studies.</desc>
   <style>
     @media (prefers-reduced-motion: reduce) { animate { display: none; } }
   </style>
-
-  <rect width="1280" height="500" fill="#0b0b0d"/>
-  <path d="M52 52H1228M52 448H1228" stroke="#f1efe7" stroke-opacity=".14"/>
-
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <text x="52" y="90" fill="#8d8d92" font-size="12" font-weight="600" letter-spacing="2">SYSTEM ENGINEER / SYSTEM ARTIST</text>
-    <text x="1228" y="90" text-anchor="end" fill="#8d8d92" font-size="12" font-weight="600" letter-spacing="2">TTINKER.NET</text>
+  <rect width="1280" height="520" fill="#0b0b0d"/>
+  <g stroke="#f1efe7" stroke-opacity=".13">
+    <path d="M52 52H1228M52 468H1228M52 52V468M1228 52V468"/>
+    <path d="M788 52V468M788 128H1228M788 242H1228M788 356H1228"/>
   </g>
 
-  <text x="48" y="318" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="178" font-weight="800" letter-spacing="0">TT1nKer</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="600">
+    <text x="76" y="91" fill="#8d8d92" font-size="12" letter-spacing="2">SYSTEM ENGINEER / SYSTEM ARTIST</text>
+    <text x="1204" y="91" text-anchor="end" fill="#8d8d92" font-size="12" letter-spacing="2">TTINKER.NET</text>
 
-  <g transform="translate(52 372)">
-    <rect width="1176" height="3" fill="#2b2b30"/>
-    <rect width="392" height="3" fill="#ef5a46"/>
-    <rect x="392" width="392" height="3" fill="#17aeb8"/>
-    <rect x="784" width="392" height="3" fill="#7357d8"/>
-    <rect width="76" height="3" fill="#f1efe7">
-      <animate attributeName="x" values="0;1100;0" dur="12s" calcMode="spline" keySplines=".4 0 .2 1;.4 0 .2 1" repeatCount="indefinite"/>
-    </rect>
+    <text x="76" y="376" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="142" font-weight="800" letter-spacing="0">TT1nKer</text>
+    <text x="76" y="421" fill="#8d8d92" font-size="12" letter-spacing="1.6">LESS SURFACE · MORE STRUCTURE</text>
+
+    <g transform="translate(812 154)">
+      <rect width="6" height="62" fill="#ef5a46"/>
+      <text x="28" y="14" fill="#8d8d92" font-size="10" letter-spacing="2">CURRENT SIGNAL</text>
+      <text x="28" y="50" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">ChatCommons</text>
+      <circle cx="379" cy="46" r="5" fill="#ef5a46">
+        <animate attributeName="opacity" values="1;.35;1" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <g transform="translate(812 268)">
+      <rect width="6" height="62" fill="#17aeb8"/>
+      <text x="28" y="14" fill="#8d8d92" font-size="10" letter-spacing="2">WORKING TOOLS</text>
+      <text x="28" y="50" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">opensender · pomodoro</text>
+    </g>
+
+    <g transform="translate(812 382)">
+      <rect width="6" height="62" fill="#7357d8"/>
+      <text x="28" y="14" fill="#8d8d92" font-size="10" letter-spacing="2">BUILDING / STUDYING</text>
+      <text x="28" y="50" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">fstCC · adaptiveNet · hwine</text>
+    </g>
   </g>
-
-  <text x="52" y="418" fill="#8d8d92" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="2">PROTOCOLS · RUNTIMES · COMPLEX SYSTEMS · USEFUL TOOLS</text>
 </svg>

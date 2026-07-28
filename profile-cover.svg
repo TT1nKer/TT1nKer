@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 500" role="img" aria-labelledby="title desc">
+  <title id="title">TT1nKer — system engineer and system artist</title>
+  <desc id="desc">Question-driven protocols, runtimes, and strange machines.</desc>
+  <rect width="1280" height="500" fill="#0B0B0D"/>
+  <path d="M0 1H1280M0 499H1280M44 0V500M1236 0V500M44 84H1236" stroke="#303036"/>
+  <rect x="44" width="8" height="84" fill="#CFFF2E"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="2.5">
+    <text x="72" y="51" fill="#F1EFE7">[ TT1NKER / QUESTION-DRIVEN ]</text>
+    <text x="1208" y="51" text-anchor="end" fill="#85858D">TTINKER.NET</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <text x="70" y="250" fill="#F1EFE7" font-size="118" letter-spacing="-7">TT1NKER</text>
+    <text x="72" y="307" fill="#A0A0A7" font-size="24" font-weight="500" letter-spacing=".5">SYSTEM ENGINEER / SYSTEM ARTIST</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="2">
+    <text x="74" y="416" fill="#85858D">QUESTION</text><text x="165" y="416" fill="#F1EFE7">→ MODEL → BUILD → TEST → REVISE → ?</text>
+    <text x="74" y="451" fill="#85858D">FIELD</text><text x="165" y="451" fill="#F1EFE7">PROTOCOLS · RUNTIMES · STRANGE MACHINES</text>
+  </g>
+  <g transform="translate(948 270)">
+    <path d="M-112-99C-54-156 74-143 103-68C131 5 70 43 24 72C-2 89-12 105-12 135" fill="none" stroke="#F1EFE7" stroke-width="42" stroke-linecap="square"/>
+    <path d="M-112-99C-54-156 74-143 103-68" fill="none" stroke="#EF5A46" stroke-width="5" transform="translate(-5 2)"/>
+    <path d="M103-68C131 5 70 43 24 72" fill="none" stroke="#13AAB5" stroke-width="5" transform="translate(5 -2)"/>
+    <rect x="-33" y="164" width="42" height="42" fill="#CFFF2E" transform="rotate(11)"/>
+    <path d="M-165 0H165M0-165V215" stroke="#34343A" stroke-width="1"/>
+  </g>
+</svg>

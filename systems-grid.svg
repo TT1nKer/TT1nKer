@@ -1,56 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 470" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 390" role="img" aria-labelledby="title desc">
   <title id="title">TT1nKer system map</title>
-  <desc id="desc">Projects grouped as current signal, working tools, and experimental systems.</desc>
-  <style>
-    @media (prefers-reduced-motion: reduce) {
-      animate { display: none; }
-    }
-  </style>
-  <rect width="1280" height="470" fill="#0b0b0d"/>
-  <path d="M0 1H1280M0 469H1280M52 0V470M1228 0V470" stroke="#f1efe7" stroke-opacity=".14"/>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="700">
-    <text x="72" y="49" fill="#85858d" font-size="12" letter-spacing="3">[ SYSTEM MAP / EVIDENCE OVER HYPE ]</text>
+  <desc id="desc">Current projects arranged in three restrained information columns.</desc>
+  <rect width="1280" height="390" fill="#0b0b0d"/>
+  <path d="M52 1H1228M52 389H1228" stroke="#f1efe7" stroke-opacity=".14"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="52" y="48" fill="#8d8d92" font-size="11" font-weight="600" letter-spacing="2">SELECTED SYSTEMS</text>
 
     <g transform="translate(52 82)">
-      <rect width="382" height="330" fill="#ef5a46"/>
-      <text x="24" y="38" fill="#0b0b0d" font-size="11" letter-spacing="2">01 / CURRENT SIGNAL</text>
-      <text x="24" y="102" fill="#0b0b0d" font-family="Arial, Helvetica, sans-serif" font-size="43" letter-spacing="0">ChatCommons</text>
-      <text x="24" y="139" fill="#0b0b0d" font-size="12" letter-spacing="1">FRIENDS ALPHA</text>
-      <path d="M24 171H358" stroke="#0b0b0d" stroke-opacity=".35"/>
-      <text x="24" y="208" fill="#0b0b0d" font-size="12">SIGNED EVENTS</text>
-      <text x="24" y="238" fill="#0b0b0d" font-size="12">REPLACEABLE HOME SERVERS</text>
-      <text x="24" y="268" fill="#0b0b0d" font-size="12">DIRECT / RELAYED QUIC</text>
-      <circle cx="348" cy="306" r="7" fill="#0b0b0d">
-        <animate attributeName="r" values="7;7;3;7" keyTimes="0;.8;.86;1" dur="3s" repeatCount="indefinite"/>
-      </circle>
+      <rect width="5" height="248" fill="#ef5a46"/>
+      <text x="28" y="20" fill="#8d8d92" font-size="10" font-weight="600" letter-spacing="2">CURRENT</text>
+      <text x="28" y="73" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">ChatCommons</text>
+      <text x="28" y="108" fill="#ef5a46" font-size="11" font-weight="600">FRIENDS ALPHA</text>
+      <path d="M28 136H348" stroke="#f1efe7" stroke-opacity=".12"/>
+      <text x="28" y="172" fill="#b7b7ba" font-size="11">SIGNED EVENTS</text>
+      <text x="28" y="202" fill="#b7b7ba" font-size="11">REPLACEABLE HOME SERVERS</text>
+      <text x="28" y="232" fill="#b7b7ba" font-size="11">DIRECT / RELAYED QUIC</text>
     </g>
 
-    <g transform="translate(446 82)">
-      <rect width="382" height="158" fill="#17aeb8"/>
-      <text x="24" y="35" fill="#0b0b0d" font-size="11" letter-spacing="2">02 / WORKING TOOLS</text>
-      <text x="24" y="83" fill="#0b0b0d" font-family="Arial, Helvetica, sans-serif" font-size="28">opensender</text>
-      <text x="24" y="119" fill="#0b0b0d" font-size="11">NETWORK TRANSFER · WORKING</text>
-      <text x="218" y="83" fill="#0b0b0d" font-family="Arial, Helvetica, sans-serif" font-size="28">pomodoro</text>
-      <text x="218" y="119" fill="#0b0b0d" font-size="11">FOCUS TOOL · SHIPPED</text>
-
-      <rect y="170" width="382" height="160" fill="#cfff2e"/>
-      <text x="24" y="205" fill="#0b0b0d" font-size="11" letter-spacing="2">03 / BOOTSTRAP</text>
-      <text x="24" y="257" fill="#0b0b0d" font-family="Arial, Helvetica, sans-serif" font-size="31">fstCC</text>
-      <text x="24" y="294" fill="#0b0b0d" font-size="11">RISC-V COMPILER · STAGE 0</text>
+    <g transform="translate(452 82)">
+      <rect width="5" height="248" fill="#17aeb8"/>
+      <text x="28" y="20" fill="#8d8d92" font-size="10" font-weight="600" letter-spacing="2">TOOLS</text>
+      <text x="28" y="73" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">opensender</text>
+      <text x="28" y="104" fill="#b7b7ba" font-size="11">NETWORK TRANSFER · WORKING</text>
+      <path d="M28 132H348" stroke="#f1efe7" stroke-opacity=".12"/>
+      <text x="28" y="178" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">pomodoro</text>
+      <text x="28" y="209" fill="#b7b7ba" font-size="11">FOCUS TOOL · SHIPPED</text>
     </g>
 
-    <g transform="translate(840 82)">
-      <rect width="388" height="330" fill="#7357d8"/>
-      <text x="24" y="38" fill="#f1efe7" font-size="11" letter-spacing="2">04 / EXPERIMENT FIELD</text>
-      <text x="24" y="94" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="30">adaptiveNet</text>
-      <text x="24" y="122" fill="#d8d0ff" font-size="10">COMPLEX SYSTEMS · BROWSER LAB</text>
-      <text x="24" y="178" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="30">hwine</text>
-      <text x="24" y="206" fill="#d8d0ff" font-size="10">HARDWARE SYNTHESIS · EXPERIMENT</text>
-      <text x="24" y="262" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="30">solar</text>
-      <text x="24" y="290" fill="#d8d0ff" font-size="10">ORBITAL MECHANICS · SANDBOX</text>
-      <path d="M332 43V287" stroke="#f1efe7" stroke-opacity=".35" stroke-dasharray="3 9">
-        <animate attributeName="stroke-dashoffset" values="0;-24" dur="2.4s" repeatCount="indefinite"/>
-      </path>
+    <g transform="translate(852 82)">
+      <rect width="5" height="248" fill="#7357d8"/>
+      <text x="28" y="20" fill="#8d8d92" font-size="10" font-weight="600" letter-spacing="2">BUILDING / STUDYING</text>
+      <text x="28" y="72" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">fstCC</text>
+      <text x="152" y="72" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">adaptiveNet</text>
+      <text x="28" y="112" fill="#b7b7ba" font-size="11">COMPILER</text>
+      <text x="152" y="112" fill="#b7b7ba" font-size="11">COMPLEX SYSTEMS</text>
+      <path d="M28 140H348" stroke="#f1efe7" stroke-opacity=".12"/>
+      <text x="28" y="186" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">hwine</text>
+      <text x="152" y="186" fill="#f1efe7" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">solar</text>
+      <text x="28" y="226" fill="#b7b7ba" font-size="11">HARDWARE</text>
+      <text x="152" y="226" fill="#b7b7ba" font-size="11">ORBITAL LAB</text>
     </g>
   </g>
 </svg>

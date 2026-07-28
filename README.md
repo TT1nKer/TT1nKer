@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://ttinker.net">
-    <img src="profile-cover.svg" alt="TT1nKer — question-driven systems lab" width="100%">
+    <img src="profile-cover.svg" alt="TT1nKer — system engineer and system artist" width="100%">
   </a>
 </p>
 
